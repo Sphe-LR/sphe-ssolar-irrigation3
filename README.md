@@ -18,6 +18,14 @@
 - Removed inline `<style>` and table-based layout; replaced with semantic HTML and external CSS.
 - Added missing `<meta viewport>` for mobile scaling.
 - Corrected CSS syntax errors that prevented styling from loading.
+## Responsive Design Evidence
+
+| Device | Screenshot |
+|--------|------------|
+| Desktop (1280px) | ![Desktop](image/desktop.png) |
+| Tablet (768px)   | ![Tablet](image/tablet.png) |
+| Mobile (390px)   | ![Mobile](image/mobile.png) |
+- 
 
 ### Part 1 original submission (summary)
 - Multi-page website with separate HTML files (Home, About, Services, Enquiry, Contact).
