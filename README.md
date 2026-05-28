@@ -23,7 +23,7 @@
 | Device | Screenshot |
 |--------|------------|
 | Desktop (1280px) | ![Desktop](image/desktop.png) |
-| Tablet (768px)   | ![Tablet](image/tablet.png) |
+| Tablet (768px)   | ![Tablet](image/tablet.jpeg)
 | Mobile (390px)   | ![Mobile](image/mobile.png) |
 - 
 
