@@ -1,0 +1,307 @@
+/* -----------------------------------------------
+   RESET & BASE STYLES
+   ----------------------------------------------- */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS Reset: consistent styling across browsers */
+html {
+    font-size: 100%; /* 1rem = 16px default, accessible */
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, system-ui, -apple-system, 'Helvetica Neue', sans-serif;
+    line-height: 1.5;
+    background-color: #fefcf5;
+    color: #1e2a2f;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* -----------------------------------------------
+   TYPOGRAPHY SCALE
+   ----------------------------------------------- */
+h1, h2, h3, h4 {
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: #1b4d2e;
+    margin-bottom: 0.75rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    border-left: 6px solid #f4c542;
+    padding-left: 1rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-top: 1rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+/* -----------------------------------------------
+   LAYOUT STRUCTURE (DESKTOP FIRST)
+   ----------------------------------------------- */
+.container {
+    max-width: 1300px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+    flex: 1;
+}
+
+/* Navigation - Flex layout */
+.nav-bar {
+    background-color: #1b4d2e;
+    padding: 1rem 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.logo h1 {
+    color: #f9c74f;
+    font-size: 1.7rem;
+    border-left: none;
+    padding-left: 0;
+    margin-bottom: 0.2rem;
+}
+
+.logo p {
+    color: #e0f2e5;
+    font-size: 0.85rem;
+    margin-bottom: 0;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.4rem 0;
+    transition: all 0.2s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+    color: #f9c74f;
+    border-bottom-color: #f9c74f;
+    outline: none;
+}
+
+/* active page indicator */
+.nav-links a.active {
+    border-bottom-color: #f9c74f;
+    color: #f9c74f;
+}
+
+/* Footer */
+footer {
+    background-color: #1e2a2f;
+    color: #cbdcc2;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+}
+
+footer a {
+    color: #f9c74f;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* -----------------------------------------------
+   CARD & GRID SYSTEMS (FLEX + GRID)
+   ----------------------------------------------- */
+.mission-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    background: #eef4ec;
+    padding: 1.8rem;
+    border-radius: 2rem;
+    margin: 1.5rem 0;
+}
+
+.mission-grid div {
+    flex: 1;
+    min-width: 200px;
+}
+
+/* Services grid - responsive columns */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.8rem;
+    margin: 2rem 0;
+}
+
+.service-card {
+    background: white;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 1px solid #e2e8d5;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 30px -12px rgba(0, 0, 0, 0.15);
+}
+
+.service-card h3 {
+    margin-top: 0;
+}
+
+/* Buttons & interactive elements */
+.btn-primary, button.primary-btn, .btn-expert {
+    display: inline-block;
+    background-color: #1b4d2e;
+    color: white;
+    padding: 0.75rem 1.8rem;
+    border-radius: 3rem;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+    font-size: 1rem;
+}
+
+.btn-primary:hover, button.primary-btn:hover, .btn-expert:hover {
+    background-color: #0f3a21;
+    transform: scale(1.02);
+}
+
+.btn-primary:focus, button.primary-btn:focus {
+    outline: 2px solid #f9c74f;
+    outline-offset: 2px;
+}
+
+/* Form styling */
+.form-group {
+    margin-bottom: 1.2rem;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border-radius: 3rem;
+    border: 1px solid #cbdcc2;
+    font-family: inherit;
+    background: white;
+    transition: 0.2s;
+}
+
+textarea {
+    border-radius: 1.5rem;
+    resize: vertical;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #1b4d2e;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(27, 77, 46, 0.2);
+}
+
+.contact-card {
+    background: #eef4ec;
+    padding: 1.5rem;
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* value badges */
+.value-badge {
+    display: inline-block;
+    background: #f9c74f30;
+    padding: 0.4rem 1.2rem;
+    border-radius: 3rem;
+    margin: 0.3rem;
+    font-weight: 500;
+}
+
+/* -----------------------------------------------
+   RESPONSIVE DESIGN (BREAKPOINTS)
+   ----------------------------------------------- */
+/* Tablet (max-width: 900px) */
+@media (max-width: 900px) {
+    .nav-bar {
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-links {
+        justify-content: center;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    .mission-grid {
+        flex-direction: column;
+    }
+}
+
+/* Mobile (max-width: 640px) */
+@media (max-width: 640px) {
+    .container {
+        padding: 0 1.2rem;
+    }
+    h1 {
+        font-size: 1.8rem;
+        border-left-width: 4px;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    .services-grid {
+        grid-template-columns: 1fr;  /* single column on mobile */
+    }
+    .nav-links {
+        gap: 0.8rem;
+        flex-wrap: wrap;
+    }
+    .nav-links a {
+        font-size: 0.9rem;
+    }
+    .btn-primary, button.primary-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Extra small mobile */
+@media (max-width: 480px) {
+    body {
+        font-size: 0.95rem;
+    }
+}
