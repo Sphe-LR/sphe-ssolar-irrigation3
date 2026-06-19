@@ -9,7 +9,7 @@
 - Added typography scale using `rem` units.
 - Used Flexbox for navigation and mission grid, CSS Grid for services layout.
 - Applied visual styles: hover effects, focus states, box-shadows, buttons.
-- Made website fully responsive with media queries at 900px (tablet) and 640px (mobile).
+- Made website fully responsive with media queries at 768x (tablet) and 390x (mobile).
 - Added responsive image using `srcset` and `sizes` attributes (solar panel photo).
 - Tested responsiveness via Chrome DevTools and added screenshots as evidence.
 
@@ -23,7 +23,7 @@
 | Device | Screenshot |
 |--------|------------|
 | Desktop (1280px) | ![Desktop](image/desktop.png) |
-| Tablet (768px)   | ![Tablet](image/tablet.jpeg)
+| Tablet (768px)   | ![Tablet](image/tablet.png) |
 | Mobile (390px)   | ![Mobile](image/mobile.png) |
 - 
 
