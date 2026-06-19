@@ -3,61 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sphe's Solar | Services</title>
+    <title>Services | Sphe's Solar & Irrigation</title>
+    <meta name="description" content="Solar home systems, farm irrigation, battery storage, and remote monitoring. Free feasibility assessment.">
+    <meta name="keywords" content="solar panels, irrigation system, battery storage, solar pump, Mpumalanga">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="nav-bar">
-        <div class="logo">
-            <h1>⚡ Sphe's Solar & Irrigation</h1>
-            <p>Power + Water for Sustainable Living</p>
-        </div>
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="services.html" class="active">Services</a>
-            <a href="enquiry.html">Enquiry</a>
-            <a href="contact.html">Contact</a>
-        </div>
-    </nav>
 
-    <main class="container">
-        <h1>Our Solar & Irrigation Services</h1>
-        <p>Tailored solutions for homes, farms, and agribusiness – reduce load‑shedding and secure water.</p>
-        
-        <div class="services-grid">
-            <div class="service-card">
-                <h3>☀️ Solar Home Systems</h3>
-                <p>Grid-tied, off‑grid & hybrid. Backup for lights, fridges, WiFi.</p>
+    <!-- ============================================
+    NAVIGATION
+    ============================================ -->
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>⚡ Sphe's Solar & Irrigation</h1>
+                <p>Power + Water for Sustainable Living</p>
             </div>
-            <div class="service-card">
-                <h3>💧 Drip & Sprinkler Irrigation</h3>
-                <p>Solar‑powered pumps + smart timers. Maximise crop yield.</p>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html" class="active">Services</a>
+                <a href="enquiry.html">Enquiry</a>
+                <a href="contact.html">Contact</a>
             </div>
-            <div class="service-card">
-                <h3>🔋 Battery Storage</h3>
-                <p>Lithium & gel batteries. 24/7 energy autonomy.</p>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ============================================
+        HERO SECTION
+        ============================================ -->
+        <section class="hero" style="height:400px;">
+            <div class="hero-overlay">
+                <h2>Our Solar & Irrigation Services</h2>
+                <p>Tailored solutions for homes, farms, and agribusiness.</p>
             </div>
-            <div class="service-card">
-                <h3>🌾 Farm Solutions</h3>
-                <p>Borehole solarisation, livestock watering, centre pivot integration.</p>
+        </section>
+
+        <!-- ============================================
+        SEARCH & FILTER
+        ============================================ -->
+        <section class="services">
+            <h2>🔍 Find Your Solution</h2>
+            <div class="search-container">
+                <input type="text" id="service-search" class="search-input" placeholder="Search services...">
+                <select id="service-filter" class="filter-btn">
+                    <option value="all">All Services</option>
+                    <option value="solar">Solar</option>
+                    <option value="irrigation">Irrigation</option>
+                    <option value="battery">Battery</option>
+                </select>
             </div>
-            <div class="service-card">
-                <h3>📊 Remote Monitoring</h3>
-                <p>Real‑time usage via app. Proactive alerts.</p>
+
+            <!-- ============================================
+            SERVICES GRID
+            ============================================ -->
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>☀️ Solar Home Systems</h3>
+                    <p>Grid-tied, off‑grid & hybrid. Backup for lights, fridges, WiFi.</p>
+                </div>
+                <div class="service-card">
+                    <h3>💧 Drip & Sprinkler Irrigation</h3>
+                    <p>Solar‑powered pumps + smart timers. Maximise crop yield.</p>
+                </div>
+                <div class="service-card">
+                    <h3>🔋 Battery Storage</h3>
+                    <p>Lithium & gel batteries. 24/7 energy autonomy.</p>
+                </div>
+                <div class="service-card">
+                    <h3>🌾 Farm Solutions</h3>
+                    <p>Borehole solarisation, livestock watering, centre pivot integration.</p>
+                </div>
+                <div class="service-card">
+                    <h3>📊 Remote Monitoring</h3>
+                    <p>Real‑time usage via app. Proactive alerts.</p>
+                </div>
+                <div class="service-card">
+                    <h3>🔧 O&M Packages</h3>
+                    <p>Annual service plans, panel cleaning, pump inspections.</p>
+                </div>
             </div>
-            <div class="service-card">
-                <h3>🔧 O&M Packages</h3>
-                <p>Annual service plans, panel cleaning, pump inspections.</p>
+        </section>
+
+        <!-- ============================================
+        GALLERY WITH LIGHTBOX - USING YOUR IMAGES
+        ============================================ -->
+        <section class="articles">
+            <h2>📸 Our Work Gallery</h2>
+            <p><strong>Click any image to view larger</strong></p>
+            <div class="gallery-grid">
+                <!-- Solar Panels -->
+                <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800" 
+                     class="gallery-img" 
+                     alt="Solar panels installation">
+                
+                <!-- Farm Irrigation -->
+                <img src="https://images.unsplash.com/photo-1563514227147-6d2ff665a6a0?w=800" 
+                     class="gallery-img" 
+                     alt="Farm irrigation system">
+                
+                <!-- Solar Farm -->
+                <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800" 
+                     class="gallery-img" 
+                     alt="Solar farm">
+                
+                <!-- Battery Storage -->
+                <img src="https://images.unsplash.com/photo-1497440001374-f26997328c1b?w=800" 
+                     class="gallery-img" 
+                     alt="Battery storage system">
             </div>
+        </section>
+
+        <!-- ============================================
+        QUICK QUOTE MODAL
+        ============================================ -->
+        <div style="text-align:center; margin:2rem 0;">
+            <button class="btn-primary" data-modal-trigger="true">📋 Quick Quote</button>
         </div>
-        <p><strong>💡 Free feasibility assessment</strong> – our engineers design the perfect system.</p>
-        <a href="enquiry.html" class="btn-primary">📩 Request a quote →</a>
+
+        <!-- ============================================
+        FARM BANNER
+        ============================================ -->
+        <section class="farm-banner">
+            <div class="farm-banner-overlay">
+                <h2>💡 Free Feasibility Assessment</h2>
+                <p>Our engineers will design the perfect system for your needs.</p>
+            </div>
+        </section>
+
+        <!-- ============================================
+        CALL TO ACTION
+        ============================================ -->
+        <div style="text-align:center; margin:2rem 0;">
+            <a href="enquiry.html" class="btn-primary">📩 Request a Quote →</a>
+        </div>
     </main>
 
+    <!-- ============================================
+    FOOTER
+    ============================================ -->
     <footer>
-        <p>© 2025 Sphe's Solar and Irrigation | Sustainable Solutions for Tomorrow</p>
+        <h3>Sphe's Solar & Irrigation</h3>
+        <p>Sustainable Energy & Water Solutions For South Africa.</p>
+        <div class="social-links">
+            <a href="#">📘 Facebook</a>
+            <a href="#">📸 Instagram</a>
+            <a href="#">🐦 Twitter</a>
+            <a href="#">💼 LinkedIn</a>
+        </div>
+        <p>📍 Nelspruit, Mpumalanga | 📞 +27 (0)13 007 1234 | ✉️ info@sphessolar.co.za</p>
         <p><a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="services.html">Services</a> | <a href="enquiry.html">Enquiry</a> | <a href="contact.html">Contact</a></p>
+        <p>© 2026 Sphe's Solar & Irrigation. All Rights Reserved.</p>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
