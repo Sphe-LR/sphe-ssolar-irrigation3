@@ -3,82 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sphe's Solar | Enquiry</title>
+    <title>Enquiry | Sphe's Solar & Irrigation – Get a Quote</title>
+    <meta name="description" content="Request a custom quote for solar panels, irrigation systems, or battery storage. Get an estimated cost instantly.">
+    <meta name="keywords" content="solar quote, irrigation cost, solar panels price, battery storage quote, South Africa">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="nav-bar">
-        <div class="logo">
-            <h1>⚡ Sphe's Solar & Irrigation</h1>
-            <p>Power + Water for Sustainable Living</p>
-        </div>
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="services.html">Services</a>
-            <a href="enquiry.html" class="active">Enquiry</a>
-            <a href="contact.html">Contact</a>
-        </div>
-    </nav>
 
-    <main class="container">
-        <h1>Get a Custom Quote</h1>
-        <p>Tell us about your solar or irrigation needs – we'll respond within 24h.</p>
+    <!-- NAVIGATION -->
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>⚡ Sphe's Solar & Irrigation</h1>
+                <p>Power + Water for Sustainable Living</p>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="enquiry.html" class="active">Enquiry</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
 
-        <form id="enquiryForm" style="background:#fff; padding:1.5rem; border-radius:2rem; border:1px solid #e2e8d5;">
-            <div class="form-group">
-                <label>Full name *</label>
-                <input type="text" id="fullName" required>
+    <main>
+        <!-- HERO -->
+        <section class="hero" style="height:350px;">
+            <div class="hero-overlay">
+                <h2>💰 Get a Custom Quote</h2>
+                <p>Fill in your details and get an estimated cost instantly.</p>
             </div>
-            <div class="form-group">
-                <label>Email *</label>
-                <input type="email" id="emailAddr" required>
-            </div>
-            <div class="form-group">
-                <label>Phone</label>
-                <input type="tel" id="phoneNum">
-            </div>
-            <div class="form-group">
-                <label>Interested in *</label>
-                <select id="interestSelect">
-                    <option>Solar Home System</option>
-                    <option>Farm Irrigation / Solar Pump</option>
-                    <option>Battery Storage</option>
-                    <option>Full Consult & Design</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label>Project details</label>
-                <textarea rows="3" id="messageDetails" placeholder="e.g., 5ha farm, existing borehole..."></textarea>
-            </div>
-            <button type="submit" class="btn-primary">✉️ Send Enquiry</button>
-            <p id="formFeedback" style="margin-top:1rem; font-weight:500;"></p>
-        </form>
+        </section>
 
-        <div class="contact-card">
-            <p>📞 Call us: +27 12 345 6789 | WhatsApp: 082 123 4567</p>
-            <p>📧 official@sphessolar.co.za</p>
-        </div>
+        <!-- ENQUIRY FORM -->
+        <section class="welcome">
+            <h1>Request a Quote</h1>
+            <p>Tell us about your solar or irrigation needs – we'll respond within 24 hours.</p>
+
+            <form id="enquiryForm" style="background:#fff; padding:2rem; border-radius:2rem; border:1px solid #e2e8d5; margin:1.5rem 0;">
+                <div class="form-group">
+                    <label>Full name *</label>
+                    <input type="text" id="fullName" placeholder="Thabo Nkosi" required>
+                </div>
+                <div class="form-group">
+                    <label>Email *</label>
+                    <input type="email" id="emailAddr" placeholder="thabo@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label>Phone number</label>
+                    <input type="tel" id="phoneNum" placeholder="081 234 5678">
+                </div>
+                <div class="form-group">
+                    <label>Service required *</label>
+                    <select id="serviceType" required>
+                        <option value="">-- Select a service --</option>
+                        <option value="solar-home">Solar Home System</option>
+                        <option value="solar-farm">Solar Farm System</option>
+                        <option value="irrigation">Irrigation System (Solar Pump)</option>
+                        <option value="battery">Battery Storage</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>System size (kW) *</label>
+                    <input type="number" id="systemSize" step="0.5" min="1" placeholder="e.g., 5" required>
+                    <small>For irrigation: enter hectares</small>
+                </div>
+                <div class="form-group">
+                    <label>Additional details</label>
+                    <textarea rows="3" id="messageDetails" placeholder="Any special requirements?"></textarea>
+                </div>
+                <button type="submit" class="btn-primary">💰 Calculate & Send Enquiry</button>
+                <div id="formFeedback" style="margin-top:1rem;"></div>
+            </form>
+        </section>
+
+        <!-- FAQ ACCORDION -->
+        <section class="articles">
+            <h2>❓ Frequently Asked Questions</h2>
+            
+            <div class="accordion-item">
+                <div class="accordion-header">How long does installation take?</div>
+                <div class="accordion-content">Typical solar installation takes 2-5 days depending on system size.</div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">Do you offer warranties?</div>
+                <div class="accordion-content">Yes, 5-year workmanship warranty and manufacturer warranties on all equipment.</div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">Can I get financing?</div>
+                <div class="accordion-content">We partner with several banks for green energy loans. Contact us for details.</div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">What areas do you service?</div>
+                <div class="accordion-content">Mpumalanga, Limpopo, and Gauteng. Remote consultations also available.</div>
+            </div>
+        </section>
+
+        <!-- ============================================
+        MAP SECTION - GOOGLE MAPS (WORKING)
+        ============================================ -->
+        <section class="welcome">
+            <h2>📍 Our Location</h2>
+            <p>Visit us at our head office in Nelspruit, Mpumalanga.</p>
+            <div style="border-radius:1.5rem; overflow:hidden; box-shadow:0 8px 30px rgba(0,0,0,0.1); margin:1.5rem 0;">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14438.988633234144!2d30.9687!3d-25.465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ee76c8e8d8d8d8d%3A0x8d8d8d8d8d8d8d8d!2sNelspruit%2C%20South%20Africa!5e0!3m2!1sen!2sza!4v1620000000000" 
+                    width="100%" 
+                    height="400" 
+                    style="border:0; display:block;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
     </main>
 
+    <!-- FOOTER -->
     <footer>
-        <p>© 2025 Sphe's Solar and Irrigation | Sustainable Solutions for Tomorrow</p>
+        <h3>Sphe's Solar & Irrigation</h3>
+        <p>Sustainable Energy & Water Solutions For South Africa.</p>
+        <div class="social-links">
+            <a href="#">📘 Facebook</a>
+            <a href="#">📸 Instagram</a>
+            <a href="#">🐦 Twitter</a>
+            <a href="#">💼 LinkedIn</a>
+        </div>
+        <p>📍 Nelspruit, Mpumalanga | 📞 +27 (0)13 007 1234 | ✉️ info@sphessolar.co.za</p>
         <p><a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="services.html">Services</a> | <a href="enquiry.html">Enquiry</a> | <a href="contact.html">Contact</a></p>
+        <p>© 2026 Sphe's Solar & Irrigation. All Rights Reserved.</p>
     </footer>
 
-    <script>
-        document.getElementById('enquiryForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const name = document.getElementById('fullName').value.trim();
-            const email = document.getElementById('emailAddr').value.trim();
-            if (!name || !email) {
-                document.getElementById('formFeedback').innerHTML = '⚠️ Please fill name and email.';
-                return;
-            }
-            document.getElementById('formFeedback').innerHTML = `✅ Thank you ${name}! Your enquiry has been sent. We'll reply within 24h.`;
-            this.reset();
-            setTimeout(() => document.getElementById('formFeedback').innerHTML = '', 5000);
-        });
-    </script>
+    <script src="js/main.js"></script>
 </body>
 </html>
