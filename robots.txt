@@ -1,0 +1,6 @@
+# robots.txt for Sphe's Solar & Irrigation
+User-agent: *
+Allow: /
+Disallow: /private/
+
+Sitemap: https://Sphe-LR.github.io/sphe-solar-irrigation/sitemap.xml
